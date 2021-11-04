@@ -166,11 +166,6 @@ body {
         left: 0px;
     }
 }
-.img {
-    border: darkgray;
-    height: 100px;
-    width: 100px;
-}
 
 .about1 {
     position: relative;
@@ -215,12 +210,78 @@ body {
         left: 0px;
     }
 } */
+.main-img {
+    position: absolute;
+    background-image: url(../IMG/DSC_0711.JPG);
+    top: -1rem;
+    left: -1rem;
+    height: 69vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-name: main-img;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
 .about1 h1 {
     position: absolute;
-    font-size: 6rem;
-    left: 0;
+    left: 100px;
+    top: 580px;
+    animation-name: name-enter1;
+    animation-duration: 2s;
 }
 .about1 h2 {
+    position: absolute;
+    font-size: 3rem;
+    left: 700px;
+    top: 800px;
+    animation-name: name-enter2;
+    animation-duration: 2s;
+}
+.about2 .img {
+    position: absolute;
+    top: 1000px;
+    border: darkgray;
+    height: 430px;
+    width: 361px;
+    background-image: url(../IMG/Adam.jpg);
+    background-position: center;
+}
+.about2 h3 {
     font-size: 2rem;
-    left: 0;
+    position: absolute;
+    text-align: left;
+    left: 50px;
+    top: 1500px;
+}
+.about2 p {
+    position: absolute;
+    left: 400px;
+    top: 1050px;
+    font-size: 1.5rem;
+    text-align: left;
+    width: 1000px;
+    height: 360px;
+}
+
+@keyframes name-enter1 {
+    from {
+        opacity: 0%;
+        top: -200px;
+    }
+}
+
+@keyframes name-enter2 {
+    from {
+        opacity: 0%;
+        left: -200px;
+    }
+}
+
+@keyframes main-img {
+    from {
+        top: -60vh;
+        opacity: 0%;
+    }
 }
