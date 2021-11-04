@@ -166,3 +166,61 @@ body {
         left: 0px;
     }
 }
+.img {
+    border: darkgray;
+    height: 100px;
+    width: 100px;
+}
+
+.about1 {
+    position: relative;
+    /* text-align: right; */
+}
+/* .navbarabout {
+    position: relative;
+    top: 75px;
+    width: 14rem;
+    font-size: 2rem;
+    background-color: rgb(54, 54, 54);
+    line-height: 2;
+    animation-name: hello3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+.navbarabout li {
+    background-color: lightgrey;
+    border: 2px solid darkgray;
+    padding: 0 15px;
+    list-style: none;
+    border-radius: 75px;
+    margin-top: 1rem;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.navbarabout li a{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+.navbarabout li:hover {
+    transform: translateX(20px);
+    background: darkgray;
+    cursor: pointer;
+    
+}
+@keyframes hello3 {
+    0% {
+        left: -280px;
+    }
+    100% {
+        left: 0px;
+    }
+} */
+.about1 h1 {
+    position: absolute;
+    font-size: 6rem;
+    left: 0;
+}
+.about1 h2 {
+    font-size: 2rem;
+    left: 0;
+}
