@@ -8,47 +8,161 @@ body {
     text-align: center;
     background: lightgrey;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .intro {
     position: relative;
     top: 300px;
-    animation-name: hello;
-    animation-duration: 0.5s;
 }
 .intro p{
-    align-items: center;
+    top: 50px;
+    left: 524.25px;
+    position: absolute;
     visibility: hidden;
-    
+    animation-name: hello1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3.5s;
 }
 .intro::before {
     content:"HELLO";
     position: absolute;
     visibility: hidden;
-    top: 0px;
-    left: 740px;
+    top: 50px;
+    left: 852px;
+    animation-name: hello1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
 }
 .intro::after {
     position: absolute;
     content: "ENJOY YOUR VISIT";
     visibility: hidden;
-    top: 0;
-    left: 570px;
+    top: 50px;
+    left: 676.673px;
+    animation-name: hello1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 7s;
 }
 .navbar {
-    display: flex;
-    top: 0px;
+    position: relative;
+    top: 75px;
+    width: 14rem;
     font-size: 2rem;
     line-height: 2;
-
+    animation-name: hello2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
 }
 .navbar li {
-    position: flex;
     border: 2px solid darkgray;
     padding: 0 15px;
+    list-style: none;
     border-radius: 75px;
     margin-top: 1rem;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.navbar li a{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
 }
 .navbar li:hover {
-
+    transform: translateX(20px);
+    background: darkgray;
+    cursor: pointer;
+    
+}
+@keyframes hello1 {
+    0% {
+        top: 250px;
+        opacity: 0%;
+    }
+    50% {
+        visibility: visible;
+        top: 50px;
+        opacity: 100%;
+    }
+    75% {
+        top: 50px;
+        opacity: 100%;
+    }
+    100% {
+        top: -250px;
+        opacity: 0%;
+    }
+}
+@keyframes hello2 {
+    0% {
+        left: -250px;
+    }
+    10% {
+        left: -250px;
+    }
+    20% {
+        left: -250px;
+    }
+    30% {
+        left: -250px;
+    }
+    40% {
+        left: -250px;
+    }
+    50% {
+        left: -250px;
+    }
+    60% {
+        left: -250px;
+    }
+    70% {
+        left: -250px;
+    }
+    80% {
+        left: -250px;
+    }
+    90% {
+        left: -250px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+.navbarhome {
+    position: relative;
+    top: 75px;
+    width: 14rem;
+    font-size: 2rem;
+    line-height: 2;
+    animation-name: hello3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+.navbarhome li {
+    border: 2px solid darkgray;
+    padding: 0 15px;
+    list-style: none;
+    border-radius: 75px;
+    margin-top: 1rem;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.navbarhome li a{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+.navbarhome li:hover {
+    transform: translateX(20px);
+    background: darkgray;
+    cursor: pointer;
+    
+}
+@keyframes hello3 {
+    0% {
+        left: -280px;
+    }
+    100% {
+        left: 0px;
+    }
 }
