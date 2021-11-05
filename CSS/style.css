@@ -210,20 +210,7 @@ body {
         left: 0px;
     }
 } */
-.main-img {
-    position: absolute;
-    background-image: url(../IMG/DSC_0711.JPG);
-    top: -1rem;
-    left: -1rem;
-    height: 69vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    animation-name: main-img;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-}
+
 .about1 h1 {
     position: absolute;
     left: 100px;
@@ -234,14 +221,14 @@ body {
 .about1 h2 {
     position: absolute;
     font-size: 3rem;
-    left: 700px;
+    left: 1150px;
     top: 800px;
     animation-name: name-enter2;
     animation-duration: 2s;
 }
 .about2 .img {
     position: absolute;
-    top: 1000px;
+    top: 935px;
     border: darkgray;
     height: 430px;
     width: 361px;
@@ -257,11 +244,11 @@ body {
 }
 .about2 p {
     position: absolute;
-    left: 400px;
+    left: 420px;
     top: 1050px;
     font-size: 1.5rem;
     text-align: left;
-    width: 1000px;
+    width: 950px;
     height: 360px;
 }
 
