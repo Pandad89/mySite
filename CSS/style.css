@@ -1,3 +1,9 @@
+:root {
+    --font-color: #626060;
+    --background-color: #E7E9DE;
+    --navbar-background: #DADBC0;
+    --border-color: #928B8B;
+}
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +12,8 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 5rem;
     text-align: center;
-    background: lightgrey;
+    background: #E7E9DE;
+    color: #626060;
     padding: 1rem;
     box-sizing: border-box;
 }
@@ -20,7 +27,7 @@ body {
     left: 524.25px;
     position: absolute;
     visibility: hidden;
-    animation-name: hello1;
+    animation-name: welcome;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-delay: 3.5s;
@@ -31,7 +38,7 @@ body {
     visibility: hidden;
     top: 50px;
     left: 852px;
-    animation-name: hello1;
+    animation-name: welcome;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
 }
@@ -41,41 +48,54 @@ body {
     visibility: hidden;
     top: 50px;
     left: 676.673px;
-    animation-name: hello1;
+    animation-name: welcome;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-delay: 7s;
 }
 .navbar {
-    position: relative;
-    top: 75px;
+    position: fixed;
+    background-color: var(--navbar-background);
+    top: -3px;
+    left: -3px;
     width: 14rem;
+    height: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
     font-size: 2rem;
     line-height: 2;
-    animation-name: hello2;
+    animation-name: hello1;
     animation-duration: 12s;
     animation-timing-function: ease-in-out;
 }
 .navbar li {
-    border: 2px solid darkgray;
-    padding: 0 15px;
+    position: relative;
+    top: 220px;
+    border: 2px solid #928B8B;
+    color: #626060;
     list-style: none;
     border-radius: 75px;
     margin-top: 1rem;
     transition: ease-in-out;
     transition-duration: 0.5s;
 }
-.navbar li a{
+.navbar li a {
+    color: #626060;
     text-decoration: none;
-    color: rgb(54, 54, 54);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.navbar li a:hover {
+    color: #E7E9DE;
 }
 .navbar li:hover {
     transform: translateX(20px);
-    background: darkgray;
-    cursor: pointer;
-    
+    background: #626060;
+    color: #E7E9DE;
+    /* cursor: pointer; */
 }
-@keyframes hello1 {
+
+@keyframes welcome {
     0% {
         top: 250px;
         opacity: 0%;
@@ -94,146 +114,112 @@ body {
         opacity: 0%;
     }
 }
-@keyframes hello2 {
+@keyframes hello1 {
     0% {
-        left: -250px;
+        left: -300px;
     }
     10% {
-        left: -250px;
+        left: -300px;
     }
     20% {
-        left: -250px;
+        left: -300px;
     }
     30% {
-        left: -250px;
+        left: -300px;
     }
     40% {
-        left: -250px;
+        left: -300px;
     }
     50% {
-        left: -250px;
+        left: -300px;
     }
     60% {
-        left: -250px;
+        left: -300px;
     }
     70% {
-        left: -250px;
+        left: -300px;
     }
     80% {
-        left: -250px;
+        left: -300px;
     }
     90% {
-        left: -250px;
+        left: -300px;
     }
     100% {
         left: 0px;
     }
 }
-.navbarhome {
-    position: relative;
-    top: 75px;
-    width: 14rem;
-    font-size: 2rem;
-    line-height: 2;
-    animation-name: hello3;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-}
-.navbarhome li {
-    border: 2px solid darkgray;
-    padding: 0 15px;
-    list-style: none;
-    border-radius: 75px;
-    margin-top: 1rem;
-    transition: ease-in-out;
-    transition-duration: 0.5s;
-}
-.navbarhome li a{
-    text-decoration: none;
-    color: rgb(54, 54, 54);
-}
-.navbarhome li:hover {
-    transform: translateX(20px);
-    background: darkgray;
-    cursor: pointer;
-    
-}
-@keyframes hello3 {
+@keyframes hello2 {
     0% {
-        left: -280px;
+        top: 900px;
+    }
+    10% {
+        top: 900px;
+    }
+    20% {
+        top: 900px;
+    }
+    30% {
+        top: 900px;
+    }
+    40% {
+        top: 900px;
+    }
+    50% {
+        top: 900px;
+    }
+    60% {
+        top: 900px;
+    }
+    70% {
+        top: 900px;
+    }
+    80% {
+        top: 900px;
+    }
+    90% {
+        top: 900px;
     }
     100% {
-        left: 0px;
+        top: 832px;
     }
 }
 
+.aboutme {
+    height: 100vh;
+
+}
 .about1 {
     position: relative;
-    /* text-align: right; */
 }
-/* .navbarabout {
-    position: relative;
-    top: 75px;
-    width: 14rem;
-    font-size: 2rem;
-    background-color: rgb(54, 54, 54);
-    line-height: 2;
-    animation-name: hello3;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-}
-.navbarabout li {
-    background-color: lightgrey;
-    border: 2px solid darkgray;
-    padding: 0 15px;
-    list-style: none;
-    border-radius: 75px;
-    margin-top: 1rem;
-    transition: ease-in-out;
-    transition-duration: 0.5s;
-}
-.navbarabout li a{
-    text-decoration: none;
-    color: rgb(54, 54, 54);
-}
-.navbarabout li:hover {
-    transform: translateX(20px);
-    background: darkgray;
-    cursor: pointer;
-    
-}
-@keyframes hello3 {
-    0% {
-        left: -280px;
-    }
-    100% {
-        left: 0px;
-    }
-} */
 
 .about1 h1 {
     position: absolute;
-    left: 100px;
-    top: 580px;
+    left: 284px;
+    top: 525px;
     animation-name: name-enter1;
-    animation-duration: 2s;
+    animation-duration: 12s;
 }
 .about1 h2 {
     position: absolute;
-    font-size: 3rem;
-    left: 1150px;
-    top: 800px;
+    font-size: 4rem;
+    text-decoration: underline;
+    left: 684px;
+    top: 100px;
     animation-name: name-enter2;
-    animation-duration: 2s;
+    animation-duration: 12s;
 }
 .about2 .img {
     position: absolute;
-    top: 935px;
+    top: 120px;
+    left: 300px;
     border: darkgray;
     height: 430px;
     width: 361px;
     background-image: url(../IMG/Adam.jpg);
     background-position: center;
+    animation-name: img-enter1;
+    animation-duration: 12s;
 }
 .about2 h3 {
     font-size: 2rem;
@@ -244,31 +230,367 @@ body {
 }
 .about2 p {
     position: absolute;
-    left: 420px;
-    top: 1050px;
-    font-size: 1.5rem;
+    left: 700px;
+    top: 210px;
+    font-size: 2rem;
     text-align: left;
-    width: 950px;
+    width: 1000px;
     height: 360px;
+    animation-name: name-enter3;
+    animation-duration: 12s;
 }
 
 @keyframes name-enter1 {
-    from {
+    0% {
         opacity: 0%;
         top: -200px;
+    }
+    10% {
+        opacity: 0%;
+        top: -200px;
+    }
+    20% {
+        opacity: 0%;
+        top: -200px;
+    }
+    30% {
+        opacity: 0%;
+        top: -200px;
+    }
+    40% {
+        opacity: 0%;
+        top: -200px;
+    }
+    50% {
+        opacity: 0%;
+        top: -200px;
+    }
+    60% {
+        opacity: 0%;
+        top: -200px;
+    }
+    70% {
+        opacity: 0%;
+        top: -200px;
+    }
+    80% {
+        opacity: 0%;
+        top: -200px;
+    }
+    90% {
+        opacity: 0%;
+        top: -200px;
+    }
+    100% {
+        opacity: 100%;
     }
 }
 
 @keyframes name-enter2 {
-    from {
+    0% {
         opacity: 0%;
-        left: -200px;
+        top: 100px;
+    }
+    10% {
+        opacity: 0%;
+        top: 100px;
+    }
+    20% {
+        opacity: 0%;
+        top: 100px;
+    }
+    30% {
+        opacity: 0%;
+        top: 100px;
+    }
+    40% {
+        opacity: 0%;
+        top: 100px;
+    }
+    50% {
+        opacity: 0%;
+        top: 100px;
+    }
+    60% {
+        opacity: 0%;
+        top: 100px;
+    }
+    70% {
+        opacity: 0%;
+        top: 100px;
+    }
+    80% {
+        opacity: 0%;
+        top: 100px;
+    }
+    90% {
+        opacity: 0%;
+        top: 100px;
+    }
+    100% {
+        opacity: 100%;
     }
 }
 
-@keyframes main-img {
-    from {
-        top: -60vh;
+@keyframes name-enter3 {
+    0% {
         opacity: 0%;
     }
+    10% {
+        opacity: 0%;
+    }
+    20% {
+        opacity: 0%;
+    }
+    30% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    60% {
+        opacity: 0%;
+    }
+    70% {
+        opacity: 0%;
+    }
+    80% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes img-enter1 {
+    0% {
+        opacity: 0%;
+    }
+    10% {
+        opacity: 0%;
+    }
+    20% {
+        opacity: 0%;
+    }
+    30% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    60% {
+        opacity: 0%;
+    }
+    70% {
+        opacity: 0%;
+    }
+    80% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.education {
+    height: 100vh;
+    position: relative;
+    margin-left: 284px;
+}
+.education h2 {
+    text-align: left;
+    width: 500px;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+.education p {
+    font-size: 2rem;
+    text-align: left;
+    width: 800px;
+    height: 360px;
+}
+.education .vid1 {
+    position: absolute;
+    left: 1000px;
+    bottom: 470px;
+}
+.education .vid2 {
+    position: absolute;
+    left: 1000px;
+    bottom: 130px;
+}
+
+.gaming {
+    height: 100vh;
+    position: relative;
+    margin-left: 284px;
+}
+.gaming h2 {
+    text-align: left;
+    width: 500px;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+.gaming p {
+    font-size: 2rem;
+    text-align: left;
+    width: 800px;
+    height: 310px;
+}
+.gaming .games {
+    position: relative;
+    margin-left: 290px;
+    list-style: none;
+}
+.ed {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+.fact {
+    position: absolute;
+    top: 100px;
+    left: 260px;
+}
+.de {
+    position: absolute;
+    top: 100px;
+    left: 499px;
+}
+.vcd {
+    position: absolute;
+    top: 100px;
+    left: 738px;
+}
+.gaming .games li {
+    text-decoration: none;
+    font-size: 2rem;
+
+}
+.gaming .games li img {
+    width: 200px;
+    height: 300px;
+    
+}
+.gaming .links {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+}
+.gaming .links li {
+    display: inline;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #626060;
+}
+.gaming .links li a {
+    color: #626060;
+}
+.contact-me {
+    height: 100vh;
+    position: relative;
+    margin-left: 284px;
+}
+.contact-me h2 {
+    text-align: left;
+    width: 500px;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+.contact-me p {
+    font-size: 2rem;
+    text-align: left;
+    width: 800px;
+    height: 360px;
+}
+.contact-me form {
+    position: absolute;
+    display: block;
+    top: 225px;
+
+}
+.contact-me input {
+    border: 2px solid #928B8B;
+    color: #626060;
+    display: block;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    padding: 15px 0px;
+}
+.contact-me textarea {
+    display: block;
+    border: 2px solid #928B8B;
+    color: #626060;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+
+}
+.contact-me .name {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-radius: 75px;
+    border: 2px solid #928B8B;
+    color: #626060;
+}
+.contact-me .email {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-radius: 75px;
+    border: 2px solid #928B8B;
+    color: #626060;
+}
+.contact-me .text {
+    margin-bottom: 20px;
+    padding-left: 22px;
+    padding-top: 22px;
+    border-radius: 75px;
+    border: 2px solid #928B8B;
+    color: #626060;
+}
+.contact-me .submit {
+    position: absolute;
+    border-radius: 75px;
+    border: 2px solid #928B8B;
+    padding: 0px 15px;
+    left: 125px;
+    top: 430px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--navbar-background);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    left: -3px;
+    top: 832px;
+    animation-name: hello2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+}
+footer ul {
+    color: #626060;
+}
+footer ul li {
+    font-size: 2rem;
+    list-style: none;
+    display: inline;
+    color: #626060;
+}
+footer ul li a {
+    color: #626060;
+    position: relative;
+    top: -53px;
 }

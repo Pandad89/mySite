@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b0b659ad54.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -16,15 +17,71 @@
     </div>
     <div class="navbar">
         <ul class="navbar__list">
-            <li class="navbar__list-item1"><a href="#">About Me<a></li>
-            <li class="navbar__list-item2"><a href="#">HTML & CSS</a></li>
-            <li class="navbar__list-item3"><a href="#">Javascript</a></li>
-            <li class="navbar__list-item4"><a href="#">Photography</a></li>
-            <li class="navbar__list-item5"><a href="#">Cinematography</a></li>
-            <li class="navbar__list-item6"><a href="#">Gaming</a></li>
-            <li class="navbar__list-item7"><a href="#">Contact Me</a></li>
-            <li class="navbar__list-item8"><a href="#">Social Media</a></li>
+            <li class="navbar__aboutme" ><a href="#aboutme">About me</a></li>
+            <li class="navbar__education"><a href="#education">Education</a></li>
+            <li class="navbar__gaming"><a href="#gaming">Gaming</a></li>
+            <li class="navbar__contact"><a href="#contact-me">Contact Me</a></li>
         </ul>
     </div>
+    <div class="aboutme" id="aboutme">
+        <div class="about1">
+            <h1>Adam Birnbaum</h1>
+            <h2>About Me</h2>
+        </div>
+        <div class="about2">
+            <div class="img"></div>
+            <p>Hello and welcome to my portfolio! My name is Adam Birnbaum. I am a 32 year old american expat living in Ramla, Israel with my wife and daughter. I consider both English and Hebrew as my mother tongues, since I speak, read and write in both of them fluently. I have a bachelor's degree in communications with a minor in  cinema and television, as well as a certified technical support engineer. I am currently being certified for fullstack development. All of my social media links can be found below.</p>
+        </div>
+    </div>
+    <div class="education" id="education">
+        <h2>Education</h2>
+        <p>
+            <br>
+            2004-2007
+            <br>•Graduated from high school photography class. Practice photography mostly as hobby, with contracted jobs once in a long while.
+            <br><br>2021
+            <br>•Graduated bachelor's degree in communications from Ariel University w/ minor in cinema and television, specializing in camera work both in TV and Cinema production environments while also recieveing high grades in Video Editing, Screenwriting & Film Direction (to the right are some of my cinematography assignments).
+            <br>•Graduated Tech Support program from Appleseeds Academy. Course consisted of 110 academic hours.
+        </p>
+        <iframe class="vid1" width="560" height="315" src="https://www.youtube.com/embed/7NCwyR4vXsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="vid2" width="560" height="315" src="https://www.youtube.com/embed/ZuquaZcGHAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="gaming" id="gaming">
+        <h2>Gaming</h2>
+        <p>
+            In my spare time, I enjoy playing video games. I mostly play single player because I enjoy the story, but I do play multiplayer occasionally. If you want to, you can drop a friend request on steam or subscribe to my gaming youtube channel, where I upload once in a while.
+            <br><br>These are the games I currently play cosistently. Click the posters to go to the game's wikipedia article.
+        </p>
+        <ul class="games">
+            <li class="ed"><a href="https://en.wikipedia.org/wiki/Elite_Dangerous"><img src="./IMG/elite.jpg" alt="Elite Dangerous"></a></li>
+            <li class="fact"><a href="https://en.wikipedia.org/wiki/Factorio"><img src="./IMG/Factorio.jpg" alt="Factorio"></a></li>
+            <li class="de"><a href="https://en.wikipedia.org/wiki/Doom_Eternal"><img src="./IMG/doom-eternal-cover.jpeg" alt="Doom Eternal"></a></li>
+            <li class="vcd"><a href="https://en.wikipedia.org/wiki/Viscera_Cleanup_Detail"><img src="./IMG/VisceraCleanupDetail.jpg" alt="Viscera Cleanup Detail"></a></li>
+        </ul>
+        <ul class="links">
+            <li><a href="https://www.twitch.tv/thisisrajesh" target="_blank"><i class="fab fa-twitch"></i></a></li>
+            <li><a href="https://steamcommunity.com/profiles/76561198316836386/" target="_blank"><i class="fab fa-steam"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCgsQmQjHvwPS0ZlQ7XB4YpQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <div class="contact-me" id="contact-me">
+        <h2>Contact Me</h2>
+        <p>If you would like to contact me for work, collaboration, gaming or just to talk, you can send me an email via the form below.</p>
+        <form action="">
+            <input class="name" type="text" placeholder="Full Name">
+            <input class="email" type="email" placeholder="Email Address">
+            <textarea class="text" name="message" id="message" cols="21" rows="4" placeholder="Your Message Here"></textarea>
+            <input class="submit" type="submit" >
+        </form>
+    </div>
+    <footer class="social-media">
+        <ul>
+            <li><a href="https://twitter.com/RajeshVEVO" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/birnbabyjr/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/adam.birnbaum.16/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UC3iAMqDz12JtbhxbwkOgzxA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/adam-birnbaum-16420615b/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
