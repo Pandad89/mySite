@@ -92,7 +92,7 @@ body {
     transform: translateX(20px);
     background: #626060;
     color: #E7E9DE;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 @keyframes welcome {
